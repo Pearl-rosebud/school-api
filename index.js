@@ -16,10 +16,10 @@ app.use(morgan("dev"))
 
 app.get("/",(req, res,) => {
   res.send("Welcome to our school portal")
-})
+});
 
 
 
-const  PORT = process.env.PORT || 5000
+const  PORT = process.env.PORT || 9000
 app.listen(PORT, () =>
   console.log(`server is running on ${PORT}`))
