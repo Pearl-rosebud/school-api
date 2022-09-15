@@ -1,3 +1,5 @@
 node_modules
 
+.env
+
 DB_URL=mongodb+srv://rosebudpearl:Quinperrybel1@cluster0.deq2ys9.mongodb.net/schoolAPI?retryWrites=true&w=majority
