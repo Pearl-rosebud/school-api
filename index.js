@@ -1,8 +1,9 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const connectDB =require("./config/connectDB")
-const userRoute = require("./routes/userRoute")
-const morgan = require("morgan")
+const connectDB =require("./config/connectDB");
+const userRoute = require("./routes/userRoute");
+const schoolRoute = require("./routes/schoolRoute")
+const morgan = require("morgan");
 
 
 dotenv.config();
@@ -11,7 +12,8 @@ connectDB();
 
 //middlewares
 app.use(express.json())
-app.use("/api/users",userRoute)
+app.use("/api/users",userRoute);
+app.use("/api/schools", schoolRoute);
 app.use(morgan("dev"))
 
 app.get("/",(req, res,) => {

@@ -2,7 +2,7 @@ const User = require("../models/userSchema")
 const bcrypt = require ("bcrypt")
 const {validate} = require('../config/validator')
 const {generateToken} =require("../utils/generateToken");
-const { json } = require("express/lib/response");
+
 
 
 // adding a user

@@ -19,15 +19,15 @@ const schoolSchema= mongoose.Schema({
   facilities: {
     type: Array,
     require: true,
-    maxlength:3
+
   },
   numOfStudents: {
-    type: number,
+    type: Number,
     required: true
 
   },
 
-  Address:{
+  address:{
     gps: String,
     box: String
   },
