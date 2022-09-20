@@ -17,7 +17,7 @@ app.use("/api/schools", schoolRoute);
 app.use(morgan("dev"))
 
 app.get("/",(req, res,) => {
-  res.send("Welcome to our school portal")
+  res.send("<h1>WELCOME TO GOOD SHEPHERD INT.SCH</h1>")
 });
 
 
